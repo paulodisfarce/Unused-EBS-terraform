@@ -47,7 +47,7 @@ variable "description" {
 
 variable "schedule_expression" {
   type    = string
-  default = "cron(0 3 * * ? *)"
+  default = cron(0 6 ? * WED,SUN *)
 }
 
 variable "name_eventbridge" {
